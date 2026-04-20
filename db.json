@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Design homepage UI",
+      "description": "Create wireframe and final UI design for homepage",
+      "status": "in-progress",
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "title": "Setup Next.js project",
+      "description": "Initialize project with App Router and Tailwind CSS",
+      "status": "completed",
+      "priority": "medium"
+    },
+    {
+      "id": 3,
+      "title": "Implement authentication",
+      "description": "Add login and signup functionality using JWT",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": 4,
+      "title": "Create API endpoints",
+      "description": "Build REST API for tasks and users",
+      "status": "in-progress",
+      "priority": "medium"
+    },
+    {
+      "id": 5,
+      "title": "Deploy to production",
+      "description": "Deploy app to Vercel and configure environment variables",
+      "status": "pending",
+      "priority": "low"
+    }
+  ]
+}

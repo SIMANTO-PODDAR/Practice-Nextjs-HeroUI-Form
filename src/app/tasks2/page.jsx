@@ -1,10 +1,14 @@
-import { getTasks } from '@/lib/tasks';
+const getTasks = async () => {
+    const res = await fetch('http://localhost:3007/tasks')
+    const tasks = res.json()
+    return tasks;
+}
 
-const TasksPage = async () => {
+const TasksPage2 = async () => {
     const tasks = await getTasks()
     return (
         <div>
-            <h1>this is tasks page: {tasks.length}</h1>
+            <h1>this is tasks 2 page: {tasks.length}</h1>
 
             <div className='grid grid-cols-3 gap-5 my-5'>
                 {
@@ -16,9 +20,9 @@ const TasksPage = async () => {
     );
 };
 
-export default TasksPage;
+export default TasksPage2;
 
-const Task = ({task}) => {
+const Task = ({ task }) => {
     return (
         <div className="card card-border bg-base-100 w-96">
             <div className="card-body">
