@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "db": "json-server --watch db.json --port 3007"
+    "db": "json-server --watch db.json --port 5007"
   },
   "dependencies": {
     "@heroui/react": "^3.0.3",

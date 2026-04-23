@@ -1,5 +1,5 @@
 const getTasks = async () => {
-    const res = await fetch('http://localhost:3007/tasks')
+    const res = await fetch('http://localhost:5007/tasks', { cache: 'no-store' })
     const tasks = res.json()
     return tasks;
 }
@@ -30,6 +30,7 @@ const Task = ({ task }) => {
                 <p>{task.description}</p>
                 <div className="card-actions justify-end">
                     <button className="btn btn-primary">{task.status}</button>
+                    <button className="btn btn-info">More</button>
                 </div>
             </div>
         </div>
